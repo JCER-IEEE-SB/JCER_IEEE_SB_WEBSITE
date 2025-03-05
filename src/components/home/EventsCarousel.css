@@ -1,0 +1,496 @@
+/* .events-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: #f8fafc;
+  }
+  
+  .events-container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .events-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .events-description {
+    color: #4b5563;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .events-slider-container {
+    position: relative;
+  }
+  
+  .events-slider-item {
+    padding: 0 0.5rem;
+  }
+  
+  .event-card {
+    position: relative;
+    height: 500px;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .event-card:hover .event-image {
+    transform: scale(1.1);
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.5));
+    opacity: 0.9;
+  }
+  
+  .event-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+  }
+  
+  .event-category {
+    padding: 0.25rem 1rem;
+    background-color: #00629b;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .event-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .event-details {
+    display: flex;
+    gap: 1rem;
+    color: #d1d5db;
+  }
+  
+  .event-date,
+  .event-location {
+    display: flex;
+    align-items: center;
+  }
+  
+  .learn-more-btn {
+    margin-top: 1.5rem;
+    background-color: white;
+    color: #00629b;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: medium;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #00629b;
+    color: white;
+}*/
+
+/* @keyframes backgroundSlide {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+.events-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  display: inline;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #daecff, #d7e0ff);
+  background-size: 100% 100%;
+  animation: backgroundSlide 10s infinite alternate ease-in-out;
+}
+
+
+
+.creative-showcase--slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-horizontal {
+  width: 100%;
+  height: 0%;
+}
+
+.swiper-container-h {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay-dark::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-light::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slide-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.slider-content {
+  color: rgb(255, 255, 255);
+  max-width: 5xl;
+  
+}
+
+.slide-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.slide-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: tight;
+}
+
+.slide-heading span {
+  display: block;
+}
+
+/* Navigation Buttons */
+/*.creative-button--wrapper {
+  position: absolute;
+  bottom: 12rem;
+  right: 2rem;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.fp-arc-loader .path {
+  transition: all 0.3s ease;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+}
+
+.swiper-pagination-bullet-active .path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 5s linear;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* _______________________________________________________________________________________________________________________________ */
+/* __________________________________________________________________________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+   Header Section Styles
+--------------------------- */
+.header {
+  position: relative;
+  padding: 5rem 1rem; /* Matches py-20 & horizontal padding */
+  margin-top: -8%;
+  text-align: center;
+  color: #323232;
+}
+
+.header-container {
+  max-width: 1120px; /* Approximately Tailwind's max-w-7xl */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.events-heading {
+  font-size: 2.5rem; /* Adjusted from text-4xl/md:text-5xl */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.events-description {
+  color: #4b5563;
+  margin: 0 auto;
+}
+
+/* --------------------------
+   Slider & Swiper Styles
+--------------------------- */
+
+@keyframes backgroundSlide {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+.events-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  display: inline;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #daecff, #d7e0ff);
+  background-size: 100% 100%;
+  animation: backgroundSlide 10s infinite alternate ease-in-out;
+}
+
+.creative-showcase--slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: -2%;
+  padding-left: 9.5em;
+  padding-right: 9.5em;
+}
+
+.banner-horizontal {
+  width: 100%;
+  height: 0%;
+}
+
+.swiper-container-h {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay-dark::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-light::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slide-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.slider-content {
+  color: rgb(255, 255, 255);
+  max-width: 5xl;
+}
+
+.slide-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.slide-heading {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: tight;
+}
+
+.slide-heading span {
+  display: block;
+}
+
+/* Navigation Buttons */
+.creative-button--wrapper {
+  position: absolute;
+  bottom: 12rem;
+  right: 2rem;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.684);
+  backdrop-filter: blur(5px);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.fp-arc-loader .path {
+  transition: all 0.3s ease;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+}
+
+.swiper-pagination-bullet-active .path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 5s linear;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem;
+  }
+
+  .events-heading {
+    font-size: 2rem;
+  }
+
+  .events-description {
+    font-size: 1rem;
+  }
+
+  .creative-showcase--slider {
+    height: 60vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .slide-heading {
+    font-size: 2rem;
+  }
+}

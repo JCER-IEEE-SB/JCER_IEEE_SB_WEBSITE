@@ -1,0 +1,177 @@
+/* Wraps the entire navbar at the top */
+.fixedNavbar {
+  position: fixed;
+  width: 100%;
+  
+  z-index: 50;
+  padding-left: 1rem; /* matches px-4 */
+  padding-right: 1rem; 
+  padding-top: 1rem;   /* matches pt-4 */
+}
+/* .mx-auto {
+  margin-left: 8.5em; 
+  margin-right: 8.5em;
+} */
+
+/* Container for the nav content */
+/* Responsive padding adjustments */
+@media (min-width: 640px) {  /* sm: */
+  .fixedNavbar {
+    padding-left: 1.5rem;  /* matches sm:px-6 */
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {  /* lg: */
+  .fixedNavbar {
+    padding-left: 2rem;  /* matches lg:px-8 */
+    padding-right: 2rem;
+  }
+}
+
+/* Container for the nav content */
+.navContainer {
+  margin: 0 auto;
+  max-width: 112rem; /* approx. Tailwind's max-w-7xl */
+}
+
+
+/* Blurred backdrop container */
+.navBackdrop {
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(214, 41, 41, 0.605);
+  border-radius: 9999px; /* fully rounded (rounded-full) */
+  padding: 0.5rem 1rem;  /* py-2 px-4 */
+  transition: all 0.3s;
+}
+
+/* Background when scrolled vs not scrolled */
+.bgScrolled {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(19, 80, 130, 0.5);
+}
+.bgNotScrolled {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Flex row to position logo and nav items */
+.navFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.5rem; /* h-14 */
+}
+
+/* Logo area */
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+/* Link containing the logo image + text */
+.logoLink {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.25rem; /* text-xl */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+}
+
+/* Logo image styling */
+.logoImg {
+  height: 2rem; /* h-8 */
+  width: auto;
+  filter: brightness(2); /* brightness-200 */
+}
+
+/* Hide something on medium+ screens (md:hidden) */
+.menuButtonContainer {
+  display: block; /* visible on mobile */
+}
+@media (min-width: 768px) {
+  .menuButtonContainer {
+    display: none; /* hide on md+ */
+  }
+}
+
+/* Hide something on mobile (hidden md:block) */
+.hiddenOnMd {
+  display: none; /* hidden on mobile */
+}
+@media (min-width: 768px) {
+  .hiddenOnMd {
+    display: block; /* shown on md+ */
+  }
+}
+
+/* For the desktop nav items row */
+.flexSpace {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* space-x-4 */
+}
+
+/* Each desktop nav link */
+.navItem {
+  color: #fff;
+  padding: 0.5rem 0.75rem; /* py-2 px-3 */
+  font-size: 0.875rem;     /* text-sm */
+  font-weight: 500;        /* font-medium */
+  transition: color 0.2s;
+}
+.navItem:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Active link gets a bottom border */
+.activeItem {
+  border-bottom: 2px solid #fff;
+}
+
+/* The hamburger menu button */
+.menuButton {
+  color: #fff;
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+.menuButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile dropdown container */
+.menuDropdown {
+  display: block;
+  margin-top: 0.5rem; /* mt-2 */
+}
+@media (min-width: 768px) {
+  .menuDropdown {
+    display: none; /* hidden on md+ */
+  }
+}
+
+/* The backdrop for the dropdown items */
+.menuDropdownContainer {
+  backdrop-filter: blur(8px);
+  background-color: rgba(19, 80, 130, 0.5);
+  /* background-color: rgba(40, 91, 132, 0.5); */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem; /* rounded-2xl */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+}
+
+/* Mobile dropdown link styles */
+.dropdownItem {
+  display: block;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 0.5rem 0.75rem; /* py-2 px-3 */
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+.dropdownItem:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

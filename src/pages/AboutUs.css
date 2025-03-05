@@ -1,0 +1,70 @@
+/* About_Us-header Section */
+.About_Us-header {
+  position: relative;
+  padding: 1rem 0;
+  margin-top: -8%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+  overflow: hidden;
+}
+
+
+.About_Us-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.About_Us-header h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  /* color: #1f2937; */
+  color: #323232; 
+  margin-bottom: 1rem;
+}
+
+.About_Us-header p {
+  color: #4b5563;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+
+
+/* Global styles for AboutUs component */
+.aboutus {
+    padding-top: 1rem;
+
+  }
+  
+  /* Mission & Vision Section */
+  /* .aboutus-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-top: -10%;
+    width: 100%;
+  } */
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  .info-card {
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    width: 100%;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .sub-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #00629b;
+    margin-bottom: 1rem;
+  }
+  
+  .text-description {
+    font-size: 1rem;
+    color: #4b5563;
+  }
+  

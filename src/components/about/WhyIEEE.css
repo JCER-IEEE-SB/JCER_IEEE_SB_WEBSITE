@@ -1,0 +1,74 @@
+/* WhyIEEE Section */
+.why-ieee-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  
+  .why-ieee-container {
+    max-width: 7xl;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .why-ieee-heading {
+    font-size: 1.875rem;
+    font-weight: bold;
+    /* color: #1f2937; */
+    color: #323232;
+    margin-bottom: 1rem;
+  }
+  
+  .why-ieee-description {
+    color: #4b5563;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .why-ieee-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .why-ieee-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .why-ieee-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .why-ieee-item {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .why-ieee-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .why-ieee-icon {
+    font-size: 2rem;
+    color: #00629b;
+    margin-bottom: 1rem;
+  }
+  
+  .why-ieee-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .why-ieee-description-text {
+    color: #6b7280;
+  }
+  

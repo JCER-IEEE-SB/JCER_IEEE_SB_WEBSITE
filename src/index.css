@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .animate-progress {
+    @apply transition-all duration-1000 ease-out;
+  }
+}
+
+
+@keyframes steady-shine {
+  0%, 100% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-shine {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    opacity: 0.3;
+  }
+  50% {
+    text-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+    opacity: 1;
+  }
+}
+
+@layer components {
+  /* Loader Container */
+  .loader-container {
+    @apply fixed inset-0 flex flex-col bg-[#000510] overflow-hidden;
+  }
+
+  /* Progress Bar */
+  .progress-bar {
+    @apply h-1 bg-white/10;
+  }
+
+  .progress-bar-fill {
+    @apply h-full w-full bg-white/40 animate-progress origin-left;
+  }
+
+  /* Background Effects */
+  .radial-bg {
+    @apply absolute inset-0;
+  }
+
+  .gradient-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-blue-600/10 via-blue-900/10 to-transparent;
+  }
+
+  .blur-effect {
+    @apply absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[80px] animate-pulse;
+  }
+
+  /* Centered Text */
+  .text-container {
+    @apply flex-1 flex items-center justify-center;
+  }
+
+  .text-style {
+    @apply text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/80;
+  }
+
+  /* JCER - Continuous Shine */
+  .steady-shine {
+    animation: steady-shine 2s infinite alternate ease-in-out;
+  }
+
+  /* IEEE - Pulsating Shine */
+  .pulse-shine {
+    animation: pulse-shine 2s infinite alternate ease-in-out;
+  }
+}

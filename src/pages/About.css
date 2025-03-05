@@ -1,0 +1,88 @@
+/* NOTE: This file is not necessary and irrelevant, if you want u can delete it  */
+
+/* Global styles */
+.about {
+    padding-top: 4rem;
+  }
+  
+  /* Mission & Vision Section */
+  .mission-vision {
+    position: relative;
+  }
+  
+  .mission-vision img {
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission-vision .absolute {
+    inset: 0;
+    background: rgba(0, 98, 155, 0.1);
+    border-radius: 1rem;
+  }
+  
+  /* Core Values Section */
+  .core-values {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: white;
+  }
+  
+  .core-values .text-center {
+    margin-bottom: 3rem;
+  }
+  
+  .core-values .value-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .core-values .value-card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .core-values .icon-container {
+    padding: 1rem;
+    background-color: #e1f5fe;
+    border-radius: 50%;
+  }
+  
+  .core-values .value-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .Photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin: 5rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .Photo {
+      width: 95vw;
+      aspect-ratio: 4 / 3;
+      margin: 3rem auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Photo {
+      width: 100vw;
+      aspect-ratio: 1 / 1;
+      margin: 2rem auto;
+    }
+  }
+  

@@ -1,0 +1,198 @@
+/* --------------------------
+   Header Section Styles
+--------------------------- */
+.header {
+  position: relative;
+  padding: 5rem 1rem; /* Matches py-20 & horizontal padding */
+  margin-top: -8%;
+  /* background-color: #f7f7f7; */
+  text-align: center;
+  /* color: #1f1f1f; */
+  color: #323232;
+}
+
+.header-container {
+  max-width: 1120px; /* Approximately Tailwind's max-w-7xl */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.events-heading {
+  font-size: 2.5rem; /* Adjusted from text-4xl/md:text-5xl */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.events-description {
+  color: #4b5563;
+  /* max-width: 32rem; */
+  margin: 0 auto;
+}
+
+/* --------------------------
+   Slider & Swiper Styles
+--------------------------- */
+
+@keyframes backgroundSlide {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+.events-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+  display: inline;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #daecff, #d7e0ff);
+  background-size: 100% 100%;
+  animation: backgroundSlide 10s infinite alternate ease-in-out;
+}
+
+
+
+.creative-showcase--slider {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: -2%;
+  /* border-radius: 10px; */
+  padding-left: 9.5em;
+  padding-right: 9.5em;
+}
+
+.banner-horizontal {
+  width: 100%;
+  height: 0%;
+}
+
+.swiper-container-h {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-bg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay-dark::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-light::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.slide-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.slider-content {
+  color: rgb(255, 255, 255);
+  max-width: 5xl;
+  
+}
+
+.slide-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.slide-heading {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: tight;
+}
+
+.slide-heading span {
+  display: block;
+}
+
+/* Navigation Buttons */
+ .creative-button--wrapper {
+  position: absolute;
+  bottom: 12rem;
+  right: 2rem;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.684);
+  backdrop-filter: blur(5px);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 10;
+  display: flex;
+  gap: 1rem;
+}
+
+.fp-arc-loader .path {
+  transition: all 0.3s ease;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+}
+
+.swiper-pagination-bullet-active .path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 5s linear;
+} 
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------------------------------ */
+
+
+
+
