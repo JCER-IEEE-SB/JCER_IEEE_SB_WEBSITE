@@ -109,7 +109,7 @@ const EventsCarousel = () => {
       modules: [Navigation, Pagination, Parallax, Mousewheel, Autoplay],
       speed: 3500,
       autoplay: {
-        delay: 3000,
+        delay: 700,
       },
       parallax: true,
       // mousewheel: true,

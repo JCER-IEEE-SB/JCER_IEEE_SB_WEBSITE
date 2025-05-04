@@ -44,7 +44,7 @@ const About = () => {
               <div className="space-y-6">
 
                 <div className="bg-white p-6 rounded-lg shadow-md">
-                  <h2 className="text-xl font-semibold text-[#00629B] mb-3">JCER Student Branch</h2>
+                  <h2 className="text-xl font-semibold text-[#00629B] mb-3">JCER Student Branch (STB60208149)</h2>
                   <p className="text-gray-600">
                   Imagine a vibrant community of like-minded peers, all fueled by a shared passion for technology and its potential to solve global challenges. That is exactly what IEEE Student Branch is all about. 
                   <br /><br />
