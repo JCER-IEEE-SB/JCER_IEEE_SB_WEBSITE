@@ -124,5 +124,3 @@ Designed and developed with ❤️ by the JCER IEEE Student Branch team. Special
 This project is licensed under the [MIT License](LICENSE).
 
 ---
-
-Feel free to customize this `README.md` further to suit your needs!
