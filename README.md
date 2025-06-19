@@ -1,6 +1,6 @@
 # JCER IEEE Student Branch Website
 
-Welcome to the official repository for the **JCER IEEE Student Branch Website**. This project is a modern, responsive website built using React, TypeScript, and TailwindCSS to showcase the activities, achievements, and events of the JCER IEEE Student Branch.
+Welcome this is the official repository of the **JCER IEEE Student Branch Website**. This project is a modern, responsive website built using React, TypeScript, and TailwindCSS to showcase the activities, achievements, and events of the JCER IEEE Student Branch.
 
 ---
 
